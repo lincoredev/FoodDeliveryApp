@@ -1,5 +1,5 @@
 //
-//  OnboardingCoordinator.swift
+//  OrderCoordinator.swift
 //  FoodDeliveryApp
 //
 //  Created by Vova Lincore on 31.03.2024.
@@ -7,13 +7,15 @@
 
 import UIKit
 
-class OnboardingCoordinator: Coordinator {
+class OrderCoordinator: Coordinator {
     override func start() {
         let vc = ViewController()
+        vc.view.backgroundColor = .yellow
         navigationController?.pushViewController(vc, animated: true)
     }
     
     override func finish() {
-        print("OnboardingCoordinator finish")
+        print("OrderCoordinator finish")
     }
 }
+
