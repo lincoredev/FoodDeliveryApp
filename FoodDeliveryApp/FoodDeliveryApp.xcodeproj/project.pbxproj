@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F48197A2BB7140F0039CCA5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4819792BB7140F0039CCA5 /* Coordinator.swift */; };
+		4F48197C2BB930370039CCA5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48197B2BB930370039CCA5 /* AppCoordinator.swift */; };
+		4F48197E2BB930FF0039CCA5 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48197D2BB930FF0039CCA5 /* OnboardingCoordinator.swift */; };
 		4F810FBF2BB0A5BA005CF34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FBE2BB0A5BA005CF34D /* AppDelegate.swift */; };
 		4F810FC12BB0A5BA005CF34D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FC02BB0A5BA005CF34D /* SceneDelegate.swift */; };
 		4F810FC32BB0A5BA005CF34D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FC22BB0A5BA005CF34D /* ViewController.swift */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		4F4819792BB7140F0039CCA5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4F48197B2BB930370039CCA5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4F48197D2BB930FF0039CCA5 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		4F810FBB2BB0A5BA005CF34D /* FoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F810FBE2BB0A5BA005CF34D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F810FC02BB0A5BA005CF34D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				4F4819792BB7140F0039CCA5 /* Coordinator.swift */,
+				4F48197B2BB930370039CCA5 /* AppCoordinator.swift */,
+				4F48197D2BB930FF0039CCA5 /* OnboardingCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 				4F810FBF2BB0A5BA005CF34D /* AppDelegate.swift in Sources */,
 				4F810FF12BB0B4FF005CF34D /* UIFont+Extension.swift in Sources */,
 				4F810FF52BB0BBDF005CF34D /* AppColors.swift in Sources */,
+				4F48197E2BB930FF0039CCA5 /* OnboardingCoordinator.swift in Sources */,
 				4F810FC12BB0A5BA005CF34D /* SceneDelegate.swift in Sources */,
+				4F48197C2BB930370039CCA5 /* AppCoordinator.swift in Sources */,
 				4F810FF32BB0BAD5005CF34D /* UIColor+Extension.swift in Sources */,
 				4F48197A2BB7140F0039CCA5 /* Coordinator.swift in Sources */,
 			);
