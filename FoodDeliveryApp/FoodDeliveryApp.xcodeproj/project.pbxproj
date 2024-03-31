@@ -36,6 +36,8 @@
 		4F810FF12BB0B4FF005CF34D /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FF02BB0B4FF005CF34D /* UIFont+Extension.swift */; };
 		4F810FF32BB0BAD5005CF34D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FF22BB0BAD5005CF34D /* UIColor+Extension.swift */; };
 		4F810FF52BB0BBDF005CF34D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FF42BB0BBDF005CF34D /* AppColors.swift */; };
+		4F98524F2BB9AB3C0059AFB5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F98524E2BB9AB3C0059AFB5 /* OnboardingViewController.swift */; };
+		4F9852512BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9852502BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		4F810FF02BB0B4FF005CF34D /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		4F810FF22BB0BAD5005CF34D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4F810FF42BB0BBDF005CF34D /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		4F98524E2BB9AB3C0059AFB5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		4F9852502BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +137,11 @@
 		4F810FBD2BB0A5BA005CF34D /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F98524C2BB9AA8B0059AFB5 /* UILayer */,
 				4F4819762BB713CF0039CCA5 /* NavigationLayer */,
+				4F810FD22BB0AA6D005CF34D /* Resources */,
 				4F810FBE2BB0A5BA005CF34D /* AppDelegate.swift */,
 				4F810FC02BB0A5BA005CF34D /* SceneDelegate.swift */,
-				4F810FD22BB0AA6D005CF34D /* Resources */,
 				4F810FC22BB0A5BA005CF34D /* ViewController.swift */,
 				4F810FC72BB0A5BB005CF34D /* Assets.xcassets */,
 				4F810FC92BB0A5BB005CF34D /* LaunchScreen.storyboard */,
@@ -190,6 +195,23 @@
 				4F810FF22BB0BAD5005CF34D /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F98524C2BB9AA8B0059AFB5 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				4F98524D2BB9AAD40059AFB5 /* Onboarding */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		4F98524D2BB9AAD40059AFB5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4F98524E2BB9AB3C0059AFB5 /* OnboardingViewController.swift */,
+				4F9852502BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +304,7 @@
 				4F48197E2BB930FF0039CCA5 /* OnboardingCoordinator.swift in Sources */,
 				4F810FC12BB0A5BA005CF34D /* SceneDelegate.swift in Sources */,
 				4F4819822BB939B30039CCA5 /* OrderCoordinator.swift in Sources */,
+				4F98524F2BB9AB3C0059AFB5 /* OnboardingViewController.swift in Sources */,
 				4F48197C2BB930370039CCA5 /* AppCoordinator.swift in Sources */,
 				4F4819862BB955F50039CCA5 /* ProfileCoordinator.swift in Sources */,
 				4F4819842BB955EC0039CCA5 /* ListCoordinator.swift in Sources */,
@@ -289,6 +312,7 @@
 				4F4819882BB957D00039CCA5 /* TabBarController.swift in Sources */,
 				4F810FF32BB0BAD5005CF34D /* UIColor+Extension.swift in Sources */,
 				4F48197A2BB7140F0039CCA5 /* Coordinator.swift in Sources */,
+				4F9852512BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
