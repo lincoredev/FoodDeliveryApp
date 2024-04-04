@@ -15,6 +15,8 @@
 		4F4819842BB955EC0039CCA5 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4819832BB955EC0039CCA5 /* ListCoordinator.swift */; };
 		4F4819862BB955F50039CCA5 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4819852BB955F50039CCA5 /* ProfileCoordinator.swift */; };
 		4F4819882BB957D00039CCA5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4819872BB957D00039CCA5 /* TabBarController.swift */; };
+		4F4E13D92BBC8E96003608AF /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E13D82BBC8E96003608AF /* UserStorage.swift */; };
+		4F4E13DC2BBDAC30003608AF /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E13DB2BBDAC30003608AF /* SceneFactory.swift */; };
 		4F810FBF2BB0A5BA005CF34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FBE2BB0A5BA005CF34D /* AppDelegate.swift */; };
 		4F810FC12BB0A5BA005CF34D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FC02BB0A5BA005CF34D /* SceneDelegate.swift */; };
 		4F810FC32BB0A5BA005CF34D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FC22BB0A5BA005CF34D /* ViewController.swift */; };
@@ -50,6 +52,8 @@
 		4F4819832BB955EC0039CCA5 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		4F4819852BB955F50039CCA5 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		4F4819872BB957D00039CCA5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4F4E13D82BBC8E96003608AF /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		4F4E13DB2BBDAC30003608AF /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 		4F810FBB2BB0A5BA005CF34D /* FoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F810FBE2BB0A5BA005CF34D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F810FC02BB0A5BA005CF34D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +124,22 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		4F4E13D72BBC8E7E003608AF /* ServicesLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E13D82BBC8E96003608AF /* UserStorage.swift */,
+			);
+			path = ServicesLayer;
+			sourceTree = "<group>";
+		};
+		4F4E13DA2BBDAC0B003608AF /* SceneFactory */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E13DB2BBDAC30003608AF /* SceneFactory.swift */,
+			);
+			path = SceneFactory;
+			sourceTree = "<group>";
+		};
 		4F810FB22BB0A5BA005CF34D = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +159,7 @@
 		4F810FBD2BB0A5BA005CF34D /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F4E13D72BBC8E7E003608AF /* ServicesLayer */,
 				4F98524C2BB9AA8B0059AFB5 /* UILayer */,
 				4F4819762BB713CF0039CCA5 /* NavigationLayer */,
 				4F810FD22BB0AA6D005CF34D /* Resources */,
@@ -202,6 +223,7 @@
 		4F98524C2BB9AA8B0059AFB5 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				4F4E13DA2BBDAC0B003608AF /* SceneFactory */,
 				4F98524D2BB9AAD40059AFB5 /* Onboarding */,
 			);
 			path = UILayer;
@@ -314,6 +336,8 @@
 				4F4819802BB939800039CCA5 /* HomeCoordinator.swift in Sources */,
 				4F4819882BB957D00039CCA5 /* TabBarController.swift in Sources */,
 				4F9852532BB9C6B60059AFB5 /* OnboardingPartViewController.swift in Sources */,
+				4F4E13D92BBC8E96003608AF /* UserStorage.swift in Sources */,
+				4F4E13DC2BBDAC30003608AF /* SceneFactory.swift in Sources */,
 				4F810FF32BB0BAD5005CF34D /* UIColor+Extension.swift in Sources */,
 				4F48197A2BB7140F0039CCA5 /* Coordinator.swift in Sources */,
 				4F9852512BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift in Sources */,
