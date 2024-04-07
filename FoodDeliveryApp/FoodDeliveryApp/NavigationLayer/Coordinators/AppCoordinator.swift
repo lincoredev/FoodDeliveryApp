@@ -14,15 +14,11 @@ class AppCoordinator: Coordinator {
     
     override func start() {
         
-        userStorage.passedOnboarding = false 
         if userStorage.passedOnboarding {
-            showMainFlow()
+            showAuthFlow()
         } else {
             showOnboardingFlow()
         }
-        
-//        let loginVC = LoginViewController()
-//        navigationController?.pushViewController(loginVC, animated: true)
     }
 
     override func finish() {
@@ -33,7 +29,6 @@ class AppCoordinator: Coordinator {
 
 // MARK: - Navigation methods
 private extension AppCoordinator {
-    
     func showOnboardingFlow() {
         guard let navigationController = navigationController else { return }
         factory.makeOnboardingFlow(coordinator: self, finishDelegate: self, navigationController: navigationController)
@@ -44,6 +39,27 @@ private extension AppCoordinator {
         let tabBarController = factory.makeMainFlow(coordinator: self, finishDelegate: self)
         navigationController.pushViewController(tabBarController, animated: true)
     }
+    
+    func showAuthFlow() {
+        guard let navigationController = navigationController else { return }
+        let vc = factory.makeAuthScene(coordinator: self)
+        navigationController.pushViewController(vc, animated: true)
+    }
+}
+
+// MARK: - Methods
+extension AppCoordinator {
+    func showSignInScene() {
+        guard let navigationController = navigationController else { return }
+        let vc = factory.makeSignInScene(coordinator: self)
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func showSignUpScene() {
+        guard let navigationController = navigationController else { return }
+        let vc = factory.makeSignUpScene(coordinator: self)
+        navigationController.pushViewController(vc, animated: true)
+    }
 }
 
 extension AppCoordinator: CoordinatorFinishDelegate {
@@ -53,7 +69,7 @@ extension AppCoordinator: CoordinatorFinishDelegate {
         switch childCoordinator.type {
         case .onboarding:
             navigationController?.viewControllers.removeAll()
-            showMainFlow()
+            showAuthFlow()
         case .app:
             return
         default:
