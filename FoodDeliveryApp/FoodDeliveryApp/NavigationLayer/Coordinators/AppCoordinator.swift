@@ -14,6 +14,7 @@ class AppCoordinator: Coordinator {
     
     override func start() {
         
+//        userStorage.passedOnboarding = false
         if userStorage.passedOnboarding {
             showAuthFlow()
         } else {
