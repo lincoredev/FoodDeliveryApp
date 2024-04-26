@@ -7,22 +7,21 @@
 
 import UIKit
 
-class AppCoordinator: Coordinator {
+class AppCoordinator: Coordinator, TabBarCoordinator {
     
     private let userStorage = UserStorage.shared
     private let factory = SceneFactory.self
     
+    var tabBarController: UITabBarController?
+    
     override func start() {
         
-        userStorage.passedOnboarding = false 
+//        userStorage.passedOnboarding = false
         if userStorage.passedOnboarding {
-            showMainFlow()
+            showAuthFlow()
         } else {
             showOnboardingFlow()
         }
-        
-//        let loginVC = LoginViewController()
-//        navigationController?.pushViewController(loginVC, animated: true)
     }
 
     override func finish() {
@@ -33,10 +32,10 @@ class AppCoordinator: Coordinator {
 
 // MARK: - Navigation methods
 private extension AppCoordinator {
-    
     func showOnboardingFlow() {
         guard let navigationController = navigationController else { return }
-        factory.makeOnboardingFlow(coordinator: self, finishDelegate: self, navigationController: navigationController)
+        let onboardingCoordinator = factory.makeOnboardingFlow(coordinator: self, finishDelegate: self, navigationController: navigationController)
+        onboardingCoordinator.start()
     }
     
     func showMainFlow() {
@@ -44,16 +43,26 @@ private extension AppCoordinator {
         let tabBarController = factory.makeMainFlow(coordinator: self, finishDelegate: self)
         navigationController.pushViewController(tabBarController, animated: true)
     }
+    
+    func showAuthFlow() {
+        guard let navigationController = navigationController else { return }
+        let loginCoordinator = factory.makeLoginFlow(coordinator: self, finishDelegate: self, navigationController: navigationController)
+        loginCoordinator.start()
+    }
 }
 
+// MARK: - FinishDelegate
 extension AppCoordinator: CoordinatorFinishDelegate {
     func coordinatorDidFinish(childCoordinator: any CoordinatorProtocol) {
         removeChildCoordinator(childCoordinator)
         
         switch childCoordinator.type {
         case .onboarding:
-            navigationController?.viewControllers.removeAll()
+            showAuthFlow()
+            navigationController?.viewControllers = [navigationController?.viewControllers.last ?? UIViewController()]
+        case .login:
             showMainFlow()
+            navigationController?.viewControllers = [navigationController?.viewControllers.last ?? UIViewController()]
         case .app:
             return
         default:

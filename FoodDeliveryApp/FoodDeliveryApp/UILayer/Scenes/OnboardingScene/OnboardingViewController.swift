@@ -107,7 +107,6 @@ private extension OnboardingViewController {
         bottomButton.action = { [weak self] in
             self?.buttonPressed()
         }
-        bottomButton.action = buttonPressed
         bottomButton.scheme = .gray
         
         NSLayoutConstraint.activate([
