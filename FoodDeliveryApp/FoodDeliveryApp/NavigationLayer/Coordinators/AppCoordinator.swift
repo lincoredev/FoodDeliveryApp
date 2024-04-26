@@ -17,11 +17,12 @@ class AppCoordinator: Coordinator, TabBarCoordinator {
     override func start() {
         
 //        userStorage.passedOnboarding = false
-        if userStorage.passedOnboarding {
-            showAuthFlow()
-        } else {
-            showOnboardingFlow()
-        }
+//        if userStorage.passedOnboarding {
+//            showAuthFlow()
+//        } else {
+//            showOnboardingFlow()
+//        }
+        showMainFlow()
     }
 
     override func finish() {
