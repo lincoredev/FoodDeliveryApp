@@ -15,13 +15,11 @@ struct SceneFactory {
         coordinator.addChildCoordinator(onboardingCoordinator)
         return onboardingCoordinator
     }
-    
     static func makeLoginFlow(coordinator: AppCoordinator, finishDelegate: CoordinatorFinishDelegate, navigationController: UINavigationController) -> LoginCoordinator {
         let loginCoordinator = LoginCoordinator(type: .login, navigationController: navigationController, finishDelegate: finishDelegate)
         coordinator.addChildCoordinator(loginCoordinator)
         return loginCoordinator
     }
-    
     static func makeOnboardingScene(coordinator: OnboardingCoordinator) -> OnboardingViewController {
         
         var pages = [OnboardingPartViewController]()
@@ -60,7 +58,6 @@ struct SceneFactory {
         
         return viewController
     }
-    
     // MARK: - Main flow
     static func makeMainFlow(coordinator: AppCoordinator, finishDelegate: CoordinatorFinishDelegate) -> TabBarController {
         
@@ -98,25 +95,27 @@ struct SceneFactory {
         
         return tabBarController
     }
-    
     static func makeAuthScene(coordinator: LoginCoordinator) -> LoginViewController {
         let presenter = LoginPresenter(coordinator: coordinator)
         let controller = LoginViewController(viewOutput: presenter, state: .initial)
         presenter.viewInput = controller
         return controller
     }
-    
     static func makeSignInScene(coordinator: LoginCoordinator) -> LoginViewController {
         let presenter = LoginPresenter(coordinator: coordinator)
         let controller = LoginViewController(viewOutput: presenter, state: .signIn)
         presenter.viewInput = controller
         return controller
     }
-    
     static func makeSignUpScene(coordinator: LoginCoordinator) -> LoginViewController {
         let presenter = LoginPresenter(coordinator: coordinator)
         let controller = LoginViewController(viewOutput: presenter, state: .signUp)
         presenter.viewInput = controller
+        return controller
+    }
+    static func makeHomeScene(coordinator: HomeCoordinator) -> HomeViewController {
+        // TODO: add presenter
+        let controller = HomeViewController()
         return controller
     }
 }

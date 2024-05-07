@@ -23,6 +23,8 @@
 		4F4E13EB2BBEFDE1003608AF /* FDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E13EA2BBEFDE1003608AF /* FDButton.swift */; };
 		4F4E13ED2BBF0B67003608AF /* FDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E13EC2BBF0B67003608AF /* FDTextField.swift */; };
 		4F4E13EF2BBF1EC6003608AF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E13EE2BBF1EC6003608AF /* LoginPresenter.swift */; };
+		4F7BD5952BDC40A7005ED844 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7BD5942BDC40A7005ED844 /* HomeViewController.swift */; };
+		4F7BD5982BDD0CF5005ED844 /* SmallHCViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7BD5972BDD0CF5005ED844 /* SmallHCViewCell.swift */; };
 		4F810FBF2BB0A5BA005CF34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FBE2BB0A5BA005CF34D /* AppDelegate.swift */; };
 		4F810FC12BB0A5BA005CF34D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FC02BB0A5BA005CF34D /* SceneDelegate.swift */; };
 		4F810FC32BB0A5BA005CF34D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F810FC22BB0A5BA005CF34D /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 		4F98524F2BB9AB3C0059AFB5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F98524E2BB9AB3C0059AFB5 /* OnboardingViewController.swift */; };
 		4F9852512BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9852502BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift */; };
 		4F9852532BB9C6B60059AFB5 /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9852522BB9C6B60059AFB5 /* OnboardingPartViewController.swift */; };
+		4FAE0E782BE96B1C004B190A /* BigHCViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE0E772BE96B1C004B190A /* BigHCViewCell.swift */; };
+		4FAE0E7A2BEABB01004B190A /* BigVCViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE0E792BEABB01004B190A /* BigVCViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,8 @@
 		4F4E13EA2BBEFDE1003608AF /* FDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDButton.swift; sourceTree = "<group>"; };
 		4F4E13EC2BBF0B67003608AF /* FDTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDTextField.swift; sourceTree = "<group>"; };
 		4F4E13EE2BBF1EC6003608AF /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4F7BD5942BDC40A7005ED844 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4F7BD5972BDD0CF5005ED844 /* SmallHCViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallHCViewCell.swift; sourceTree = "<group>"; };
 		4F810FBB2BB0A5BA005CF34D /* FoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F810FBE2BB0A5BA005CF34D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F810FC02BB0A5BA005CF34D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 		4F98524E2BB9AB3C0059AFB5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		4F9852502BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		4F9852522BB9C6B60059AFB5 /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
+		4FAE0E772BE96B1C004B190A /* BigHCViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigHCViewCell.swift; sourceTree = "<group>"; };
+		4FAE0E792BEABB01004B190A /* BigVCViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigVCViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,10 +215,54 @@
 		4F4E13E92BBEFD7C003608AF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4F7BD5902BDC4062005ED844 /* HomeScene */,
 				4F98524D2BB9AAD40059AFB5 /* OnboardingScene */,
 				4F4E13DD2BBEB18D003608AF /* AuthScene */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4F7BD5902BDC4062005ED844 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				4F7BD5932BDC4080005ED844 /* View */,
+				4F7BD5922BDC4077005ED844 /* Controller */,
+				4F7BD5912BDC406A005ED844 /* Presenter */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		4F7BD5912BDC406A005ED844 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F7BD5922BDC4077005ED844 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F7BD5942BDC40A7005ED844 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F7BD5932BDC4080005ED844 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F7BD5962BDD0C50005ED844 /* CollectionViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F7BD5962BDD0C50005ED844 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4F7BD5972BDD0CF5005ED844 /* SmallHCViewCell.swift */,
+				4FAE0E772BE96B1C004B190A /* BigHCViewCell.swift */,
+				4FAE0E792BEABB01004B190A /* BigVCViewCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		4F810FB22BB0A5BA005CF34D = {
@@ -398,6 +450,8 @@
 			files = (
 				4F810FC32BB0A5BA005CF34D /* ViewController.swift in Sources */,
 				4F810FBF2BB0A5BA005CF34D /* AppDelegate.swift in Sources */,
+				4FAE0E782BE96B1C004B190A /* BigHCViewCell.swift in Sources */,
+				4F7BD5982BDD0CF5005ED844 /* SmallHCViewCell.swift in Sources */,
 				4F810FF12BB0B4FF005CF34D /* UIFont+Extension.swift in Sources */,
 				4F810FF52BB0BBDF005CF34D /* AppColors.swift in Sources */,
 				4F48197E2BB930FF0039CCA5 /* OnboardingCoordinator.swift in Sources */,
@@ -418,7 +472,9 @@
 				4F4E13DC2BBDAC30003608AF /* SceneFactory.swift in Sources */,
 				4F810FF32BB0BAD5005CF34D /* UIColor+Extension.swift in Sources */,
 				4F4E13E42BBEB3F9003608AF /* FDBottomView.swift in Sources */,
+				4F7BD5952BDC40A7005ED844 /* HomeViewController.swift in Sources */,
 				4F4E13EB2BBEFDE1003608AF /* FDButton.swift in Sources */,
+				4FAE0E7A2BEABB01004B190A /* BigVCViewCell.swift in Sources */,
 				4F48197A2BB7140F0039CCA5 /* Coordinator.swift in Sources */,
 				4F9852512BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift in Sources */,
 			);

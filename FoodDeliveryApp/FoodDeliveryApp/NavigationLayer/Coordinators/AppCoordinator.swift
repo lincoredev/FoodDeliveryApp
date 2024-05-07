@@ -42,7 +42,12 @@ private extension AppCoordinator {
     func showMainFlow() {
         guard let navigationController = navigationController else { return }
         let tabBarController = factory.makeMainFlow(coordinator: self, finishDelegate: self)
-        navigationController.pushViewController(tabBarController, animated: true)
+        self.tabBarController = tabBarController
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = .fade
+        self.window?.layer.add(transition, forKey: kCATransition)
+        self.window?.rootViewController = self.tabBarController
     }
     
     func showAuthFlow() {
