@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F0661852BD66B9300A42CD5 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0661842BD66B9300A42CD5 /* LoginCoordinator.swift */; };
+		4F3C2F922C14944200D644B2 /* FDSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C2F912C14944200D644B2 /* FDSearchField.swift */; };
+		4F3C2F942C15BE5400D644B2 /* FDCollectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C2F932C15BE5400D644B2 /* FDCollectionTitle.swift */; };
 		4F48197A2BB7140F0039CCA5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4819792BB7140F0039CCA5 /* Coordinator.swift */; };
 		4F48197C2BB930370039CCA5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48197B2BB930370039CCA5 /* AppCoordinator.swift */; };
 		4F48197E2BB930FF0039CCA5 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48197D2BB930FF0039CCA5 /* OnboardingCoordinator.swift */; };
@@ -55,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		4F0661842BD66B9300A42CD5 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		4F3C2F912C14944200D644B2 /* FDSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDSearchField.swift; sourceTree = "<group>"; };
+		4F3C2F932C15BE5400D644B2 /* FDCollectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDCollectionTitle.swift; sourceTree = "<group>"; };
 		4F4819792BB7140F0039CCA5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4F48197B2BB930370039CCA5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4F48197D2BB930FF0039CCA5 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 			children = (
 				4F4E13EA2BBEFDE1003608AF /* FDButton.swift */,
 				4F4E13EC2BBF0B67003608AF /* FDTextField.swift */,
+				4F3C2F912C14944200D644B2 /* FDSearchField.swift */,
+				4F3C2F932C15BE5400D644B2 /* FDCollectionTitle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -462,6 +468,7 @@
 				4F4E13DF2BBEB220003608AF /* LoginViewController.swift in Sources */,
 				4F48197C2BB930370039CCA5 /* AppCoordinator.swift in Sources */,
 				4F4819862BB955F50039CCA5 /* ProfileCoordinator.swift in Sources */,
+				4F3C2F922C14944200D644B2 /* FDSearchField.swift in Sources */,
 				4F4819842BB955EC0039CCA5 /* ListCoordinator.swift in Sources */,
 				4F4819802BB939800039CCA5 /* HomeCoordinator.swift in Sources */,
 				4F4819882BB957D00039CCA5 /* TabBarController.swift in Sources */,
@@ -476,6 +483,7 @@
 				4F4E13EB2BBEFDE1003608AF /* FDButton.swift in Sources */,
 				4FAE0E7A2BEABB01004B190A /* BigVCViewCell.swift in Sources */,
 				4F48197A2BB7140F0039CCA5 /* Coordinator.swift in Sources */,
+				4F3C2F942C15BE5400D644B2 /* FDCollectionTitle.swift in Sources */,
 				4F9852512BB9ABAC0059AFB5 /* OnboardingViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
